@@ -1,20 +1,35 @@
 package com.example.mehdi.imagegride;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
 
+import java.util.Objects;
+
 /**
- * Created by antonin on 16-06-23.
+ * Created by Mehdi on 16-06-23.
  */
 public class Myadapter extends BaseAdapter {
     Context currentcontext;
 
-    public Myadapter (Context context){
+    private int[] jpgImage;
+    private int[] jpgOptImage;
+    private int[] pngImage;
+
+    public Myadapter (Context context, String load){
+
+        imageFill();
         currentcontext = context;
+    }
+
+    public int[] imageFill(){
+        int a = (R.drawable.class).getFields().length;
+        Log.d("A length : ", "--" + a);
+        return null;
     }
 
     @Override

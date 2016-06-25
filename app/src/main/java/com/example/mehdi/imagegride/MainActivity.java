@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         GridView imgGride = (GridView) findViewById(R.id.gridview);
-        imgGride.setAdapter(new Myadapter(this));
+        imgGride.setAdapter(new Myadapter(this, ""));
 
         imgGride.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
