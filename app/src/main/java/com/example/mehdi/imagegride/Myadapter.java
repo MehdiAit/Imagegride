@@ -37,7 +37,7 @@ public class Myadapter extends BaseAdapter {
         ImageView img;
         img = new ImageView(currentcontext);
         img.setLayoutParams(new GridView.LayoutParams(250, 250));
-        img.setImageResource(R.drawable.test);
+        img.setImageResource(R.drawable.jpg_chrome);
         return img;
     }
 }
